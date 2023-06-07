@@ -12,15 +12,18 @@ body {
 }
 
 .container {
-  border: 1px solid lightgray;
-  width: 600px;
-  height: 400px;
+  width: 562px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ededed;
+  background: #fff;
+  margin: 40px auto;
 }
 
 .divgrid {
-  width: 50px;
-  height: 50px;
-  border: 1px solid lightgray;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ededed;
 }
 
 /* BUTTONS */
