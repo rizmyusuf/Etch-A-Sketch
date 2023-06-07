@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <header id="header">
+      <h1 class="title">Etch-A-Sketch</h1>
+    </header>
+    <main id="main">
+      <div class="buttons">
+        <button class="btn"></button>
+        <button class="btn"></button>
+        <button class="btn"></button>
+        <div class="color-picker">
+          <input type="color" id="color" name="color" value="#e66465" />
+          <label for="color">choose a color</label>
+        </div>
+        <input type="range" id="vol" name="vol" min="4" max="100" />
+      </div>
+      <div class="container"></div>
+    </main>
+    <footer id="footer">
+      <p class="copyright">Made by: rizmyusuf</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
