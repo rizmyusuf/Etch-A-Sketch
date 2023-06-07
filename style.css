@@ -13,16 +13,14 @@ body {
 
 .container {
   width: 562px;
-  display: flex;
-  flex-wrap: wrap;
+  height: 562px;
+  display: grid;
   border: 1px solid #ededed;
   background: #fff;
   margin: 40px auto;
 }
 
 .divgrid {
-  width: 35px;
-  height: 35px;
   border: 1px solid #ededed;
 }
 
