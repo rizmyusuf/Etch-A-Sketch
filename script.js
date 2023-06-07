@@ -1,10 +1,13 @@
-const container = document.querySelector(".container");
+const slider = document.querySelector("#slide");
 
 function createGrid(size) {
-  let amount = size * size;
+  const container = document.querySelector(".container");
+  const squares = container.querySelectorAll("div");
+  squares.forEach(div => div.remove())
 	container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 	container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
-
+  
+  let amount = size * size;
   for (let i = 0; i < amount; i++) {
   	let divGrid = document.createElement("div");
 		divGrid.classList.add("divgrid");
@@ -12,4 +15,9 @@ function createGrid(size) {
   }
 }
 
-createGrid(30);
+createGrid(16);
+
+slider.addEventListener("input", function() {
+  let slideVal = document.querySelector("#slide").value;
+  createGrid(slideVal);
+});
