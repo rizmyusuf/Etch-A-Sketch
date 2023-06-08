@@ -4,6 +4,7 @@ const colorBlackBtn = document.querySelector(".black");
 const rgbBtn = document.querySelector(".rgb");
 const resetBtn = document.querySelector(".reset");
 const colorPicker = document.getElementById("color");
+const slideNumber = document.querySelector(".slide-value");
 
 
 function createGrid(size) {
@@ -37,6 +38,7 @@ createGrid(16);
 
 slider.addEventListener("input", function() {
   let slideVal = document.querySelector("#slide").value;
+  slideNumber.textContent = `${slideVal}`;
   createGrid(slideVal);
   reset();
 });
