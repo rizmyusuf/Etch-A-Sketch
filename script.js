@@ -3,6 +3,7 @@ const container = document.querySelector(".container");
 const colorBlackBtn = document.querySelector(".black");
 const rgbBtn = document.querySelector(".rgb");
 const resetBtn = document.querySelector(".reset");
+const colorPicker = document.getElementById("color");
 
 
 function createGrid(size) {
@@ -50,6 +51,12 @@ rgbBtn.addEventListener("click", (e) => {
   container.addEventListener("mouseover", (e) => {
     e.target.style.backgroundColor = RandomRGB();
   });
-})
+});
 
 resetBtn.addEventListener("click", reset);
+
+colorPicker.addEventListener("input", (e) => {
+  container.addEventListener("mouseover", (e) => {
+    e.target.style.backgroundColor = colorPicker.value;
+  });
+});
