@@ -24,6 +24,20 @@ body {
   border: 1px solid #ededed;
 }
 
+input[type="range"] {
+  -webkit-appearance: none;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ff4500;
+}
+
 /* BUTTONS */
 .buttons {
   display: flex;
@@ -101,6 +115,11 @@ body {
   color: olive;
 }
 
+/* SLIDER */
+.slide-value {
+  font-size: 25px;
+}
+
 /* HEADER */
 #header .title {
   text-align: center;
@@ -121,4 +140,13 @@ body {
   justify-content: center;
   font-size: 25px;
   height: 50px;
+}
+
+.heart {
+  color: #dc143c;
+}
+
+.link-github {
+  text-decoration: none;
+  color: inherit;
 }
