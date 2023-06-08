@@ -1,4 +1,6 @@
 const slider = document.querySelector("#slide");
+const container = document.querySelector(".container");
+const colorBlackBtn = document.querySelector(".black");
 
 function createGrid(size) {
   const container = document.querySelector(".container");
@@ -20,4 +22,10 @@ createGrid(16);
 slider.addEventListener("input", function() {
   let slideVal = document.querySelector("#slide").value;
   createGrid(slideVal);
+});
+
+colorBlackBtn.addEventListener("click", () => {
+  container.addEventListener("mouseover", (e) => {
+    e.target.style.backgroundColor = "black";
+  });
 });
